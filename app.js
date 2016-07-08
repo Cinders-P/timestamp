@@ -46,6 +46,6 @@ app.get('/:query', function(req, res, next) {
     res.end();
 });
 
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
     console.log('Timestamp API listening on port 3000!');
 });
