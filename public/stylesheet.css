@@ -1,0 +1,30 @@
+body {
+    font-family: Titillium Web;
+    font-weight: 400;
+}
+
+.display-4 {
+    text-align: center;
+    padding: 3rem;
+    font-weight: 700;
+}
+
+h4 {
+    font-weight: 600;
+}
+
+p {
+    text-align: left;
+}
+
+.active {
+    padding: 1rem 1.3rem 0.8rem 1.3rem !important;
+}
+
+.list-group-item {
+    padding: 1.3rem;
+}
+
+ul {
+    margin-top: 2rem;
+}

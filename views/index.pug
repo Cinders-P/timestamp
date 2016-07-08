@@ -1,0 +1,52 @@
+doctype html
+html(lang='en')
+
+  head
+    title Timestamp Microservice
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    link(href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700', rel='stylesheet')
+    // Bootstrap
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css', integrity='sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd', crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js', integrity='sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7', crossorigin='anonymous')
+    // Custom Stylesheet
+    link(rel='stylesheet', type='text/css', href='stylesheet.css')
+    
+  body
+    .container
+      h1.display-4 Timestamp Microservice API
+      .list-group
+        a.list-group-item.active(href='#')
+          h4.list-group-item-heading User Stories
+        a.list-group-item(href='#')
+          p.list-group-item-text
+            | 1. I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date.
+        a.list-group-item(href='#')
+          p.list-group-item-text
+            | 2. If it does, it returns both the Unix timestamp and the natural language form of that date.
+        a.list-group-item(href='#')
+          p.list-group-item-text
+            | 3. If it does not contain a date or Unix timestamp, it returns null for those properties.
+      ul.list-group
+        li.list-group-item.active(href='#')
+          h4.list-group-item-heading Examples
+        li.list-group-item(href='#')
+          p.list-group-item-text
+            dt.col-sm-1 Input
+            dd.col-sm-11
+              code 
+                = naturalLink
+              |  or 
+              code
+                = unixLink
+        li.list-group-item(href='#')
+          p.list-group-item-text
+            dt.col-sm-1 Output
+            dd.col-sm-11
+              code {"unix":
+                = unixOutput
+                |,"natural":"
+                = naturalOutput
+                |"}
+      

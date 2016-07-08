@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>Timestamp Microservice</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+
+	<!-- Custom Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+</head>
+
+<body>
+	<div class="container">
+		<h1 class="display-4">Timestamp Microservice API</h1>
+		<div class="list-group">
+			<a href="#" class="list-group-item active">
+				<h4 class="list-group-item-heading">User Stories</h4>
+			</a>
+			<a href="#" class="list-group-item">
+				<p class="list-group-item-text">1. I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date.</p>
+			</a>
+			<a href="#" class="list-group-item">
+				<p class="list-group-item-text">2. If it does, it returns both the Unix timestamp and the natural language form of that date.</p>
+			</a>
+			<a href="#" class="list-group-item">
+				<p class="list-group-item-text">3. If it does not contain a date or Unix timestamp, it returns null for those properties.</p>
+			</a>
+		</div>
+
+		<ul class="list-group">
+			<li href="#" class="list-group-item active">
+				<h4 class="list-group-item-heading">Examples</h4>
+			</li>
+			<li href="#" class="list-group-item">
+				<p class="list-group-item-text"><dt class="col-sm-1">Input</dt>
+					<dd class="col-sm-11"><code>https://timestamp-ms.herokuapp.com/December%2015,%202015</code> or <code>https://timestamp-ms.herokuapp.com/1450137600</code></dd>
+				</p>
+
+			</li>
+			<li href="#" class="list-group-item">
+				<p class="list-group-item-text"><dt class="col-sm-1">Output</dt>
+					<dd class="col-sm-11"><code>{ "unix": 1450137600, "natural": "December 15, 2015" }</code></dd>
+				</p>
+
+			</li>
+		</ul>
+
+
+	</div>
+</body>
+
+</html>
